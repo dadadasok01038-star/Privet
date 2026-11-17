@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accorad CSN</title>
+    <!-- Официальная библиотека Telegram для Mini Apps -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка профиля / Баланс -->
+        <header class="header">
+            <div class="logo">ACCORAD CSN</div>
+            <div class="balance-card">
+                <span id="balance">1000</span> 🪙
+            </div>
+        </header>
+
+        <!-- Основной экран / Главный интерактивный блок -->
+        <main class="main-screen">
+            <div class="safe-box" id="openCaseBtn">
+                <div class="safe-glow"></div>
+                <div class="safe-icon">🔐</div>
+                <p>Открыть хранилище</p>
+            </div>
+            
+            <div id="result" class="result-box">Нажмите на хранилище, чтобы испытать удачу!</div>
+        </main>
+
+        <!-- Меню / Навигация -->
+        <nav class="nav-menu">
+            <button class="nav-btn active">Кейсы</button>
+            <button class="nav-btn" onclick="claimBonus()">Бонус</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
